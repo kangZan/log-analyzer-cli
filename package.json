@@ -1,0 +1,70 @@
+{
+  "name": "log-analyzer-cli",
+  "version": "1.0.0",
+  "description": "A powerful CLI tool for analyzing log files with AI-driven error diagnosis and code location capabilities",
+  "main": "dist/index.js",
+  "bin": {
+    "log-analyzer": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/log-analyzer-cli.git"
+  },
+  "homepage": "https://github.com/your-username/log-analyzer-cli#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/log-analyzer-cli/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "postbuild": "chmod +x dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "link": "npm run build && npm link",
+    "unlink": "npm unlink -g"
+  },
+  "keywords": [
+    "cli",
+    "log",
+    "analyzer",
+    "ai",
+    "error",
+    "debugging",
+    "typescript",
+    "nodejs",
+    "ollama",
+    "openai",
+    "anthropic",
+    "code-location",
+    "stack-trace",
+    "log-analysis",
+    "error-diagnosis"
+  ],
+  "author": "Your Name <your-email@example.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "crypto-js": "^4.2.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.12",
+    "ora": "^7.0.1",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^20.10.4",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
